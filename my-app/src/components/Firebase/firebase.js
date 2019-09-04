@@ -1,19 +1,19 @@
 import app from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
-const config = {
-    apiKey: "AIzaSyA_ow4mw0HoRmrlhqeMMBUC-LocdyQznzc",
-    authDomain: "myfitness-696c2.firebaseapp.com",
-    databaseURL: "https://myfitness-696c2.firebaseio.com",
-    projectId: "myfitness-696c2",
-    storageBucket: "",
-    messagingSenderId: "680315578242",
-    appId: "1:680315578242:web:19be07bd9fbe719f"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyA_ow4mw0HoRmrlhqeMMBUC-LocdyQznzc",
+  authDomain: "myfitness-696c2.firebaseapp.com",
+  databaseURL: "https://myfitness-696c2.firebaseio.com",
+  projectId: "myfitness-696c2",
+  storageBucket: "",
+  messagingSenderId: "680315578242",
+  appId: "1:680315578242:web:2f2727c0e9b3e060"
+};
 
   class Firebase {
     constructor() {
-      app.initializeApp(config);
+      app.initializeApp(firebaseConfig);
       this.auth = app.auth();
       this.db = app.database();
     }
